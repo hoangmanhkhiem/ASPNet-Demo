@@ -1,0 +1,26 @@
+﻿@model Ictshop.Models.Hedieuhanh
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Chi tiết</h2>
+
+<div>
+    <h4>Hệ điều hành</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tenhdh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tenhdh)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.Mahdh }) |
+</p>
